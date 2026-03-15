@@ -74,6 +74,18 @@ All 8 coefficients are equal: `h[k] = 1/8`
 | `data_out` | Filtered output (smoothed sine wave) |
 
 ---
+## Python Verification (Google Colab)
+
+The filter was also verified in Python/Colab by applying the moving average 
+to a noisy sine wave and plotting the result.
+
+![Colab Output](colab_simulation.png)
+
+- **Blue** — Original noisy sine wave input  
+- **Red** — Filtered output (smoothed by 8-tap moving average)
+
+The filtered signal clearly smooths out the high-frequency noise while 
+following the underlying sine wave, confirming correct filter behaviour.
 
 ## Input Data Generation (Python)
 ```python
@@ -140,16 +152,3 @@ plt.savefig('results.png',dpi=600)
 plt.show()```
 
 ---
-
-## Python Verification (Google Colab)
-
-The filter was also verified in Python/Colab by applying the moving average 
-to a noisy sine wave and plotting the result.
-
-![Colab Output](colab_simulation.png)
-
-- **Blue** — Original noisy sine wave input  
-- **Red** — Filtered output (smoothed by 8-tap moving average)
-
-The filtered signal clearly smooths out the high-frequency noise while 
-following the underlying sine wave, confirming correct filter behaviour.
