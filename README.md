@@ -141,6 +141,15 @@ plt.show()```
 
 ---
 
-## Author
+## Python Verification (Google Colab)
 
-**RoyalMaddy08**
+The filter was also verified in Python/Colab by applying the moving average 
+to a noisy sine wave and plotting the result.
+
+![Colab Output](colab_simulation.png)
+
+- **Blue** — Original noisy sine wave input  
+- **Red** — Filtered output (smoothed by 8-tap moving average)
+
+The filtered signal clearly smooths out the high-frequency noise while 
+following the underlying sine wave, confirming correct filter behaviour.
